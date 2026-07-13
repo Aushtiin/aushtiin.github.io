@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Austin Tangban · Software Engineer · NLP</title>
+<meta name="description" content="Austin Tangban, software engineer. Backend systems, data pipelines, and applied NLP. Master's in NLP at Université de Lorraine." />
+<meta name="theme-color" content="#101c0e" />
+<meta property="og:title" content="Austin Tangban · Software Engineer · NLP" />
+<meta property="og:description" content="Backend systems, data pipelines, and applied NLP. 5+ years shipping production software." />
+<meta property="og:type" content="website" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='42' fill='%235fd48f'/%3E%3Ctext x='50' y='68' font-size='52' text-anchor='middle' fill='%230b1712' font-family='sans-serif' font-weight='bold'%3EA%3C/text%3E%3C/svg%3E" />
+<style>
+  :root {
+    --bg: #101c0e;
+    --text: #e2ecda;
+    --heading: #f4f8ef;
+    --muted: #99ab90;
+    --accent: #7ddb8b;
+
+    --green-bg: #1c3b20;
+    --green-text: #8ce69a;
+
+    --brown-bg: #382a1a;
+    --brown-text: #d8b48c;
+
+    --amber-bg: #3a2d14;
+    --amber-text: #e8c37c;
+
+    --gray-bg: #1c2b18;
+    --gray-text: #b9c6ae;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    min-height: 100vh;
+    background:
+      radial-gradient(ellipse 80% 50% at 50% -10%, #1c351555, transparent),
+      var(--bg);
+    color: var(--text);
+    font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  main {
+    width: 100%;
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 130px 28px 80px;
+  }
+
+  h1 {
+    margin: 0 0 10px;
+    font-size: 34px;
+    line-height: 1.15;
+    font-weight: 600;
+    letter-spacing: -0.045em;
+    color: var(--heading);
+  }
+  h1 span { color: var(--accent); }
+
+  .intro {
+    margin: 0 0 48px;
+    max-width: 640px;
+    font-size: 18px;
+    line-height: 1.65;
+    color: var(--muted);
+    letter-spacing: -0.015em;
+  }
+
+  section { margin-bottom: 36px; }
+  section p + p { margin-top: 8px; }
+
+  h2 {
+    margin: 0 0 14px;
+    font-size: 18px;
+    line-height: 1.4;
+    font-weight: 600;
+    letter-spacing: -0.025em;
+    color: var(--heading);
+  }
+
+  p {
+    margin: 0;
+    font-size: 18px;
+    line-height: 1.68;
+    letter-spacing: -0.018em;
+  }
+
+  .muted {
+    margin-top: 8px;
+    font-size: 15.5px;
+    line-height: 1.65;
+    color: var(--muted);
+  }
+  section p.earlier { margin-top: 20px; }
+
+  a {
+    color: inherit;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+  }
+  a:hover { text-decoration-thickness: 2px; }
+
+  .tag {
+    display: inline;
+    padding: 1px 6px 2px;
+    border-radius: 5px;
+    white-space: nowrap;
+    font-weight: 550;
+  }
+  a.tag { text-decoration: none; }
+  a.tag:hover { text-decoration: underline; text-decoration-thickness: 1px; }
+
+  .green { background: var(--green-bg); color: var(--green-text); }
+  .brown { background: var(--brown-bg); color: var(--brown-text); }
+  .amber { background: var(--amber-bg); color: var(--amber-text); }
+  .gray { background: var(--gray-bg); color: var(--gray-text); }
+
+  @media (max-width: 640px) {
+    main { padding: 72px 22px 56px; }
+    h1 { font-size: 30px; }
+    .intro { margin-bottom: 40px; font-size: 17px; }
+    h2 { font-size: 17px; }
+    p { font-size: 17px; }
+    .muted { font-size: 15px; }
+    .tag { white-space: normal; }
+  }
+</style>
+</head>
+
+<body>
+<main>
+
+  <h1>Hey, I'm <span>Austin Tangban</span>.</h1>
+
+  <p class="intro">
+    Software engineer working across backend systems, data pipelines, full-stack products,
+    and applied NLP. For the last two years I've been a bit obsessed with language models:
+    how they work, how to fine-tune them, and how to fit them into real products.
+  </p>
+
+  <section>
+    <h2>Currently</h2>
+    <p>
+      At <a class="tag green" href="https://www.joinsouk.com" target="_blank" rel="noopener noreferrer">Souk</a>,
+      an AI platform that finds companies new referral and affiliate partners, runs the
+      outreach, and tracks the deals. I build across the whole product: infrastructure,
+      <span class="tag amber">LLM pipelines</span> that draft outreach with human review,
+      and AI-assisted partner matching.
+    </p>
+    <p class="muted">
+      AutoWrite drafts campaign emails and LinkedIn messages with an admin review step before
+      anything goes out; matching models score and recommend partners across the network.
+    </p>
+  </section>
+
+  <section>
+    <h2>Recent work</h2>
+    <p>
+      Souk's entire <span class="tag brown">email system</span>, built from scratch and fully
+      replacing a paid vendor: domain registration, DNS, mailbox provisioning, sending,
+      warmup, and <span class="tag green">deliverability monitoring</span>.
+    </p>
+    <p class="muted">
+      Four providers stitched into one pipeline, with webhook-driven deliverability tracking
+      and a realtime admin dashboard on top.
+    </p>
+  </section>
+
+  <section>
+    <h2>Research</h2>
+    <p>
+      At <span class="tag amber">LORIA</span>, fine-tuned BioBERT and PubMedBERT to extract
+      pharmacokinetic properties from FDA drug labels, reaching
+      <span class="tag green">94 to 96 F1</span> where the best zero-shot LLM stops at 74.
+      A vision-recovery step reads values that only exist in tables, lifting them from
+      46 to 84 F1.
+    </p>
+    <p class="muted">
+      Other work includes a classifier that flags geothermal energy projects in French municipal
+      minutes, a ~9k-message political discourse corpus built from Discord screenshots with an
+      LLM-assisted pipeline, and an emotion classifier for song lyrics.
+    </p>
+  </section>
+
+  <section>
+    <h2>Previously</h2>
+    <p>
+      Spent four years at <span class="tag brown">Practice Lynchpyn</span>, a coaching platform
+      that leadership teams use to run their planning: goals, KPIs, meetings, and the routines
+      around them. I built across all of it, from a <span class="tag amber">formula engine</span>
+      that replaced teams' Excel sheets to the query and caching work that took API latency
+      from <span class="tag green">120s to under 300ms</span>.
+    </p>
+    <p class="muted">
+      Highlights include a routine-templating system that became the default workflow across
+      the company, a central database consolidating ad-platform and practice-management data,
+      and LLM-driven daily audits that fill gaps in records.
+    </p>
+    <p class="muted earlier">
+      Earlier: an NFT marketplace at SiriusLabs and core features for a Buy-Now-Pay-Later
+      fintech at PayQart.
+    </p>
+  </section>
+
+  <section>
+    <h2>Focus</h2>
+    <p>
+      <span class="tag brown">Full-stack engineer</span> who likes shipping whole systems end
+      to end, putting <span class="tag amber">LLMs into production workflows</span> with human
+      review where it matters, and working with models that are
+      <span class="tag green">fine-tuned, benchmarked, and understood</span> rather than just called.
+    </p>
+    <p class="muted">
+      Day to day: TypeScript, Node.js, Ruby on Rails, React, Python, Postgres, Redis, Docker.
+      On the ML side: PyTorch, HuggingFace Transformers, scikit-learn, spaCy.
+    </p>
+  </section>
+
+  <section>
+    <h2>Education</h2>
+    <p>
+      <span class="tag green">MSc in Natural Language Processing</span> at Université de Lorraine, Nancy, France.
+    </p>
+    <p>
+      <span class="tag brown">BSc in Physics/Electronics</span> at University of Port Harcourt, Nigeria.
+    </p>
+  </section>
+
+  <section>
+    <h2>Contact</h2>
+    <p>
+      <a href="mailto:aotangban@gmail.com">Email</a> ·
+      <a href="https://github.com/Aushtiin" target="_blank" rel="noopener noreferrer">GitHub</a> ·
+      <a href="https://www.linkedin.com/in/austintangban/" target="_blank" rel="noopener noreferrer">LinkedIn</a> ·
+      <a href="Austin_Tangban_Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+    </p>
+    <p class="muted">Nancy, France</p>
+  </section>
+
+</main>
+</body>
+</html>
